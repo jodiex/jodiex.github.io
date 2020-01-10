@@ -1,0 +1,16 @@
+/* if viewport is equal to or less than 340px */
+@media only screen and (max-width: 340px){
+    html, body{
+        font-family: 'Nunito', sans-serif;
+    }
+    .header-area .navigation .navbar .navbar-brand,
+    .header-area .navigation .navbar,
+    .main-area .projects-area {
+        padding: 2%;
+        margin: 0;
+    }
+
+    .main-area .banner .site-intro h1{
+        font-size: 40px;
+    }
+}
