@@ -32,7 +32,7 @@
 
 /* site intro */
 .main-area .banner .site-intro {
-    padding-left: 11rem;
+    padding-left: 9rem;
 }
 
 .main-area .banner .site-intro h2 {
@@ -51,8 +51,8 @@
 }
 
 .main-area .banner .site-intro-pic img {
-    padding: 2rem;
-    padding-right: 5rem;
+    padding-bottom: 2rem;
+    padding-right: 7rem;
     width: 80rem;
 }
 
@@ -96,6 +96,7 @@
 .main-area .about-area .about-img {
     width: 50%;
     padding-left: 26rem;
+    padding-top: 2rem;
 }
 
 .main-area .about-area h2 {
@@ -109,6 +110,7 @@
 /* skills section*/
 .main-area .skills-area h2{
     font-weight: 800;
+    padding-bottom: 0.5rem;
 }
 .main-area .skills-area h4{
     font-weight: 700;
@@ -140,6 +142,7 @@
     padding: 0.5rem 0;
     margin: 2rem 0rem;
     transition: box-shadow .7s ease;
+    border-radius: 17px;
 }
 
 
