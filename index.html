@@ -27,16 +27,13 @@
                       <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">About</a>
+                      <a class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Skills</a>
+                        <a class="nav-link" href="#skills">Skills</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="#projects">Projects</a>
                     </li>
                   </ul>
                 </div>
@@ -55,26 +52,26 @@
                         <h4 class="intro-text intro-position">Software Developer and Designer.</h4>
                         <div class="intro-buttons">
                             <div class="d-flex flex-row flex-wrap">
-                                <button type="button" class="btn button">Resume</button>
-                                <button type="button" class="btn button">Github</button>
-                                <button type="button" class="btn button">LinkedIn</button>
+                                <button type="button" class="btn button" onclick="window.location.href = 'https:\/\/google.ca';">Resume</button>
+                                <button type="button" class="btn button" onclick="window.location.href = 'https:\/\/github.com/jodiex';">Github</button>
+                                <button type="button" class="btn button" onclick="window.location.href = 'https:\/\/linkedin.com/in/jodie-xiang/';">LinkedIn</button>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-12 col-lg-6 site-intro-pic">
-                        <img src="images/banner-pic-3.png" alt="banner graphic" class="img-fluid">
+                        <img src="images/intro-pic-3.png" alt="banner graphic" class="img-fluid">
                     </div>
                 </div>
             </div>
         </section>
 
         <!---------- ABOUT ---------->
-        <section class="about-area">
+        <section class="about-area" id="about">
             <div class="container-fluid">
                 <div class="row">
 
                     <div class="col-lg-6 col-md-12 about-img">
-                        <img src="images/about-pic-2.png" alt="programming icon" class="img-fluid py-4">
+                        <img src="images/about-me-pic-resized.png" alt="programming icon" class="img-fluid py-4">
                     </div>
                     <div class="col-lg-6 col-md-12">
                         <h2 class="pt-5">About Me</h2>
@@ -89,9 +86,51 @@
                 </div>
             </div>
         </section>
+        <!---------- SKILLS ---------->
+        <section class="skills-area" id="skills">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="pt-5">Skills</h2>
+                    </div>
+                </div>
+                <div class="container skills-list">
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-12 text-center">
+                            <div class="card-body">
+                                <h4 class="card-title pt-3">Languages</h4>
+                                <div class="skills-languages pt-3 card-text">
+                                    <ul class="list-unstyled">
+                                        <li>C/C++</li>
+                                        <li>Java</li>
+                                        <li>Python</li>
+                                        <li>Javascript (ES6)</li>
+                                        <li>Bash</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-12 text-center">
+                            <div class="card-body">
+                                <h4 class="card-title pt-3">Tools/Technologies</h4>
+                                <div class="skills-tools pt-3 card-text">
+                                    <ul class="list-unstyled">
+                                        <li>HTML/CSS</li>
+                                        <li>Bootstrap</li>
+                                        <li>React.js</li>
+                                        <li>JIRA</li>
+                                        <li>Git</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-
-        <section class="projects-area">
+        <!---------- PROJECTS ---------->
+        <section class="projects-area" id="projects">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 text-center projects-title">
@@ -100,7 +139,7 @@
                 </div>
                 <div class="container projects-list">
                     <div class="row">
-                        <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="col-lg-3 col-md-6 col-sm-12 d-flex align-items-stretch">
                             <div class="projects">
                                 <div class="projects-img text-center py-4">
                                     <img src="./images/about-pic-2.png" alt="Project 1">
@@ -113,10 +152,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="col-lg-3 col-md-6 col-sm-12 d-flex align-items-stretch">
                             <div class="projects">
                                 <div class="projects-img text-center py-4">
-                                    <img src="./images/about-pic-2.png" alt="Project 2">
+                                    <img src="./images/tcp.png" alt="Project 2">
                                 </div>
                                 <div class="card-body">
                                     <h5 class="card-title text-center">Test Case Prioritization Software</h5>
@@ -126,10 +165,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="col-lg-3 col-md-6 col-sm-12 d-flex align-items-stretch">
                             <div class="projects">
                                 <div class="projects-img text-center py-4">
-                                    <img src="./images/about-pic-2.png" alt="Project 3">
+                                    <img src="./images/snake.png" alt="Project 3">
                                 </div>
                                 <div class="card-body">
                                     <h5 class="card-title text-center">Snake</h5>
@@ -138,10 +177,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="col-lg-3 col-md-6 col-sm-12 d-flex align-items-stretch">
                             <div class="projects">
                                 <div class="projects-img text-center py-4">
-                                    <img src="./images/about-pic-2.png" alt="Project 4">
+                                    <img src="./images/tetris.png" alt="Project 4">
                                 </div>
                                 <div class="card-body">
                                     <h5 class="card-title text-center">Two-Player Tetris</h5>
@@ -156,26 +195,21 @@
             </div>
         </section>
 
-
+        <!---------- FOOTER ---------->
         <section class="footer-area">
             <div class="container">
-                <div class="d-flex flex-row justify-content-center flex-wrap">
-                    <div class="site-logo text-center py-4">
-                        <a href="#"><img src="./images/about-pic-2.png" alt="logo"></a>
-                    </div>
-                    <div class="social text-center">
-                        <ul>
-                            <li><a href="https://github.com/jodiex?tab=overview&from=2019-12-01&to=2019-12-31" target="_blank"><i class="fab fa-github"></i></a></li>
-                            <li><a href="https://www.linkedin.com/in/jodie-xiang/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-                            <li><a href=""><i class="fas fa-file-alt"></i></a></li>
-                        </ul>
-                    </div>
-                    <div class="copyright text-center">
-                        <p>Copyright © Jodie Xiang. All rights reserved.</p>
-                    </div>
+                <div class="d-flex flex-row justify-content-center social">
+                    <ul>
+                        <li><a href="https://github.com/jodiex?tab=overview&from=2019-12-01&to=2019-12-31" target="_blank"><i class="fab fa-github"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/jodie-xiang/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href=""><i class="fas fa-file-alt"></i></a></li>
+                    </ul>
+                </div>
+                <div class="d-flex flex-row justify-content-center copyright">
+                    <p>Copyright © Jodie Xiang. All rights reserved.</p>
                 </div>
             </div>
-        </section c>
+        </section>
     </main>
 
     <script src="js/jquery.3.4.1.js"></script>
