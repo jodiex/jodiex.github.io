@@ -8,7 +8,7 @@ html, body {
 
 @font-face {
     font-family: 'Nunito';
-    src: './fonts/Nunito/Nunito-Regular.ttf';
+    src: url('fonts/Nunito/Nunito-Regular.ttf');
 }
 
 /* nav bar */
