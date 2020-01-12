@@ -115,6 +115,7 @@ html, body {
 }
 .main-area .about-area p {
     font-size: 19px;
+    width: 75%;
 }
 
 
@@ -162,6 +163,10 @@ html, body {
 }
 .main-area .projects-area .projects h5 {
     font-weight: 700;
+}
+
+.main-area .projects-area .projects .tcp {
+    font-size: 19.5px;
 }
 
 .main-area .projects-area .projects:hover {
