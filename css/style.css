@@ -149,6 +149,16 @@ html, body {
     padding: 0rem 2rem;
 }
 
+.main-area .projects-area .projects-title a {
+    color: rgb(113, 144, 209);
+}
+
+.main-area .projects-area .projects-title a:hover {
+    color: grey;
+    transition: color 0.6s ease;
+    text-decoration: none;
+}
+
 .main-area .projects-area .projects {
     background: rgb(232, 248, 255);
     padding: 0.5rem 0;
