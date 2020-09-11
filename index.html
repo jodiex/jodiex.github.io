@@ -14,190 +14,213 @@
     <!---------- HEADER ---------->
     <header class="header-area">
         <div class="navigation">
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <a class="navbar-brand" href="#">Jodie Xiang</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-              
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#skills">Skills</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projects</a>
-                    </li>
-                  </ul>
-                </div>
-              </nav>
+            <img src="images/logo.png" class="logo justify-content-center">
+            <ul class="nav justify-content-center">
+                <li class="nav-item active">
+                    <a class="nav-link" data-target="#carouselSlides" data-slide-to="0">Home<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-target="#carouselSlides" data-slide-to="1">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-target="#carouselSlides" data-slide-to="2">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-target="#carouselSlides" data-slide-to="3">Projects</a>
+                </li>
+            </ul>
         </div>
     </header>
 
     <!---------- MAIN ---------->
     <main class="main-area">
-        <section class="banner">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-lg-6 site-intro">
-                        <h2 class="intro-text">Hey,</h2>
-                        <h1 class="intro-text intro-name">I'm Jodie.</h1>
-                        <h4 class="intro-text intro-position">Software and Web Developer.</h4>
-                        <div class="intro-buttons">
-                            <div class="d-flex flex-row flex-wrap">
-                                <button type="button" class="btn button" onclick="window.open('https:\/\/drive.google.com/file/d/1KsPIvj402cIlc-I9ZgmpgJB_Vcf-a1gh/view?usp=sharing', '_blank');">Resume</button>
-                                <button type="button" class="btn button" onclick="window.open('https:\/\/github.com/jodiex','_blank');">Github</button>
-                                <button type="button" class="btn button" onclick="window.open('https:\/\/linkedin.com/in/jodie-xiang/','_blank');">LinkedIn</button>
+        <div id="carouselSlides" class="carousel slide" data-interval="false" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <section class="banner">
+                        <div class="card">
+                            <!----------- BANNER -->
+                            <div class="row">
+                                <div class="col-md-6 col-lg-6 site-intro">
+                                    <h2 class="intro-text">Hey,</h2>
+                                    <h1 class="intro-text">I'm Jodie. 👋</h1>
+                                    <h4 class="intro-text">Software and Web Developer.</h4>
+                                    <div class="intro-buttons">
+                                        <div class="d-flex flex-row flex-wrap">
+                                            <button type="button" class="btn button" onclick="window.open('https:\/\/drive.google.com/file/d/1KsPIvj402cIlc-I9ZgmpgJB_Vcf-a1gh/view?usp=sharing', '_blank');">Resume</button>
+                                            <button type="button" class="btn button" onclick="window.open('https:\/\/github.com/jodiex','_blank');">Github</button>
+                                            <button type="button" class="btn button" onclick="window.open('https:\/\/linkedin.com/in/jodie-xiang/','_blank');">LinkedIn</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-6 site-intro-pic">
+                                    <img src="images/intro-pic-3.png" alt="banner graphic" class="img-fluid">
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-6 col-lg-6 site-intro-pic">
-                        <img src="images/intro-pic-3.png" alt="banner graphic" class="img-fluid">
-                    </div>
+                    </section>
+                </div>
+                <div class="carousel-item">
+                <div class="card about-card">
+                    <!---------- ABOUT ---------->
+                    <section class="about-area" id="about">
+                        <div class="row">
+                            <div class="col-lg-5 col-md-5 about-img">
+                                <img src="images/about-me-pic.png" alt="programming icon">
+                            </div>
+                            <div class="col-lg-7 col-md-7 col-sm-12">
+                                <h2>About Me</h2>
+                                <p class="about-para">
+                                    📚 Third year Computer Science student at the University of Waterloo.<br>
+                                    👩‍💻 Experienced in full-stack web development and object-oriented programming.<br>
+                                    🌎 Driven by projects that do social good.<br>
+                                    🎨 Interested in digital art & design and 20th century history.<br>
+                                    📌 Currently learning Mandarin and mobile development with Swift.<br>
+                                    💼 Seeking Winter 2021 internships!
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                </div>
+                <div class="carousel-item">
+                <div class="card skills-card">
+                    <!---------- SKILLS ---------->
+                    <section class="skills-area" id="skills">
+                        <div class="row">
+                            <div class="col-lg-12 text-center">
+                                <h2>Skills</h2>
+                            </div>
+                        </div>
+                        <div class="container skills-list">
+                            <div class="row justify-content-around">
+                                <div class="col-lg-4 col-sm-12 text-center">
+                                    <div class="card-body">
+                                        <h4 class="card-title pt-3">Languages</h4>
+                                        <div class="pt-3 card-text">
+                                            <ul class="list-unstyled">
+                                                <li>C/C++</li>
+                                                <li>Java</li>
+                                                <li>Javascript (ES6)</li>
+                                                <li>SQL</li>
+                                                <li>Python</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-12 text-center">
+                                    <div class="card-body">
+                                        <h4 class="card-title pt-3">Tools/Technologies</h4>
+                                        <div class="pt-3 card-text">
+                                            <ul class="list-unstyled">
+                                                <li>HTML/CSS</li>
+                                                <li>Bash</li>
+                                                <li>Jira</li>
+                                                <li>Git</li>
+                                                <li>Microsoft Visual Studio</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-12 text-center">
+                                    <div class="card-body">
+                                        <h4 class="card-title pt-3">Frameworks</h4>
+                                        <div class="pt-3 card-text">
+                                            <ul class="list-unstyled">
+                                                <li>React.js</li>
+                                                <li>Vue.js</li>
+                                                <li>Bootstrap</li>
+                                                <li>Django</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                </div>
+                <div class="carousel-item">
+                <div class="card">
+                    <!---------- PROJECTS ---------->
+                    <section class="projects-area" id="projects">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-12 text-center projects-title">
+                                    <h2>Projects</h2>
+                                    <h5>Check out more on my Github <a href="https://github.com/jodiex/">here</a>.</h5>
+                                </div>
+                            </div>
+                            <div class="container projects-list">
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-6 col-sm-12 d-flex align-items-stretch">
+                                        <div class="projects">
+                                            <div class="projects-img text-center py-2">
+                                                <img src="./images/dijkstras.png" alt="Project 1">
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title text-center">Dijkstra's Algorithm Visualizer</h5>
+                                                <!--<p class="card-text">Developed a web app which finds the shortest path between
+                                                    two nodes using Dijkstra's algorithm, and visualizes each step of the algorithm in action.
+                                                    Built using <b>Javascript</b> and <b>React</b>.</p>-->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-sm-12 d-flex align-items-stretch">
+                                        <div class="projects">
+                                            <div class="projects-img text-center py-2">
+                                                <img src="./images/tcp-2.png" alt="Project 2">
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title text-center">Test Case Prioritization</h5>
+                                                <!--<p class="card-text">Created a <b>Python</b> script that retrieves and parses through
+                                                    automated test suite results and generates priority values for
+                                                    each test case based on pass/fail and its historical data. Test case data 
+                                                    is then visualized on a dashboard built using <b>React</b>.</p>-->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-sm-12 d-flex align-items-stretch">
+                                        <div class="projects">
+                                            <div class="projects-img text-center py-2">
+                                                <img src="./images/snake.png" alt="Project 3">
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title text-center">Snake</h5>
+                                                <!--<p class="card-text"><br>Recreated the classic game of Snake using <b>HTML</b>, <b>CSS</b>, 
+                                                    <b>Javascript</b> and <b>React</b>.</p>-->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-sm-12 d-flex align-items-stretch">
+                                        <div class="projects">
+                                            <div class="projects-img text-center py-2">
+                                                <img src="./images/tetris.png" alt="Project 4">
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title text-center">Two-Player Tetris</h5>
+                                                <!--<p class="card-text"><br>Remade the classic game of Tetris using <b>C++</b> with
+                                                    two-player gameplay and special actions. Utilized object-oriented programming principles and
+                                                    design patterns like MVC, Observer, Decorator and Factory Method.</p>-->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
                 </div>
             </div>
-        </section>
-
-        <!---------- ABOUT ---------->
-        <section class="about-area" id="about">
-            <div class="container-fluid">
-                <div class="row">
-
-                    <div class="col-lg-6 col-md-6 about-img">
-                        <img src="images/about-me-pic-resized.png" alt="programming icon" class="img-fluid py-4">
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12">
-                        <h2 class="pt-5">About Me</h2>
-                        <div class="paragraph py-4">
-                            <p class="about-para">
-                                I'm a second year Computer Science student at the University of Waterloo, with
-                                experience in object-oriented programming and web development.
-                                Currently seeking Summer 2020 internships!
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!---------- SKILLS ---------->
-        <section class="skills-area" id="skills">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <h2 class="pt-5">Skills</h2>
-                    </div>
-                </div>
-                <div class="container skills-list">
-                    <div class="row">
-                        <div class="col-lg-6 col-sm-12 text-center">
-                            <div class="card-body">
-                                <h4 class="card-title pt-3">Languages</h4>
-                                <div class="skills-languages pt-3 card-text">
-                                    <ul class="list-unstyled">
-                                        <li>C/C++</li>
-                                        <li>Java</li>
-                                        <li>Python</li>
-                                        <li>Javascript (ES6)</li>
-                                        <li>Bash</li>
-                                        <li>SQL</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-sm-12 text-center">
-                            <div class="card-body">
-                                <h4 class="card-title pt-3">Tools/Technologies</h4>
-                                <div class="skills-tools pt-3 card-text">
-                                    <ul class="list-unstyled">
-                                        <li>HTML/CSS</li>
-                                        <li>Bootstrap</li>
-                                        <li>React.js</li>
-                                        <li>Jira</li>
-                                        <li>Git</li>
-                                        <li>Microsoft Visual Studio</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!---------- PROJECTS ---------->
-        <section class="projects-area" id="projects">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 text-center projects-title">
-                        <h2 class="pt-5">Projects</h2>
-                        <h5>Check them out on my Github <a href="https://github.com/jodiex/">here</a>.</h5>
-                    </div>
-                </div>
-                <div class="container projects-list">
-                    <div class="row">
-                        <div class="col-lg-3 col-md-6 col-sm-12 d-flex align-items-stretch">
-                            <div class="projects">
-                                <div class="projects-img text-center py-4">
-                                    <img src="./images/dijkstras.png" alt="Project 1">
-                                </div>
-                                <div class="card-body">
-                                    <h5 class="card-title text-center">Dijkstra's Algorithm Visualizer</h5>
-                                    <p class="card-text">Developed a web app which finds the shortest path between
-                                        two nodes using Dijkstra's algorithm, and visualizes each step of the algorithm in action.
-                                        Built using <b>Javascript</b> and <b>React</b>.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-12 d-flex align-items-stretch">
-                            <div class="projects">
-                                <div class="projects-img text-center py-4">
-                                    <img src="./images/tcp-2.png" alt="Project 2">
-                                </div>
-                                <div class="card-body">
-                                    <h5 class="card-title text-center tcp">Test Case Prioritization Software</h5>
-                                    <p class="card-text">Created a <b>Python</b> script that retrieves and parses through
-                                        automated test suite results and generates priority values for
-                                        each test case based on pass/fail and its historical data. Test case data 
-                                        is then visualized on a dashboard built using <b>React</b>.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-12 d-flex align-items-stretch">
-                            <div class="projects">
-                                <div class="projects-img text-center py-4">
-                                    <img src="./images/snake.png" alt="Project 3">
-                                </div>
-                                <div class="card-body">
-                                    <h5 class="card-title text-center">Snake</h5>
-                                    <p class="card-text"><br>Recreated the classic game of Snake using <b>HTML</b>, <b>CSS</b>, 
-                                        <b>Javascript</b> and <b>React</b>.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-12 d-flex align-items-stretch">
-                            <div class="projects">
-                                <div class="projects-img text-center py-4">
-                                    <img src="./images/tetris.png" alt="Project 4">
-                                </div>
-                                <div class="card-body">
-                                    <h5 class="card-title text-center">Two-Player Tetris</h5>
-                                    <p class="card-text"><br>Remade the classic game of Tetris using <b>C++</b> with
-                                        two-player gameplay and special actions, complete with a GUI implemented
-                                        using the X Window System. Utilized object-oriented programming principles and
-                                        design patterns like MVC, Observer, Decorator and Factory Method.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+            <a class="carousel-control-prev" href="#carouselSlides" role="button" data-slide="prev">
+                <span><i class="fas fa-angle-left" aria-hidden="true"></i></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselSlides" role="button" data-slide="next">
+                <span><i class="fas fa-angle-right dark" aria-hidden="true"></i></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
 
         <!---------- FOOTER ---------->
         <section class="footer-area">

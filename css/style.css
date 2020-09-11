@@ -12,19 +12,25 @@ html, body {
 }
 
 /* nav bar */
-.header-area .navigation .navbar .navbar-brand {
-    float: left;
-    font-weight: 800;
+.header-area .logo {
+    padding-top: 0.5em;
+    width: 20em;
 }
 
-.header-area .navigation .navbar {
-    padding: 0.5rem 10rem;
+.header-area {
+    text-align: center;
+}
+
+.header-area .navigation .nav {
+    padding-bottom: 0.5rem;
 }
 
 .header-area .navigation .nav-item .nav-link {
-    text-transform: uppercase;
+    text-transform: lowercase;
     font-weight: 800;
-    padding: 1.7rem;
+    font-size: 20px;
+    padding: 1rem;
+    padding-top: 0rem;
     color: black;
 }
 
@@ -34,7 +40,7 @@ html, body {
 }
 
 
-.header-area .navigation .navbar-nav .active a {
+.header-area .navigation .nav .active a {
     background: rgb(139, 188, 219);
     background-clip: text;
     -webkit-background-clip: text;
@@ -47,7 +53,8 @@ html, body {
 }
 
 .main-area .banner .site-intro h2 {
-    padding-top: 8rem;
+    padding-top: 7rem;
+    margin-bottom: 0;
     font-weight: 700;
 }
 
@@ -67,13 +74,28 @@ html, body {
     width: 80rem;
 }
 
+.carousel-inner {
+    overflow: visible;
+}
+
+/* carousel */
+.carousel-inner .card {
+    width: 65rem;
+    height: 30rem;
+    margin: auto;
+    border-radius:17px;
+    padding-top: 2.5rem;
+    padding-bottom: 2rem;
+    box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.2);
+}
+
 .button {
     padding: 0.5rem 1.5rem;
     font-weight: 700;
     position: relative;
     border: 4px solid transparent;
     border-radius: 10px;
-    background: rgb(200, 230, 249);
+    background: #c8e6f9;
     background-clip: padding-box;
     transition: background .6s ease;
     margin: 0 4px 0 0;
@@ -99,27 +121,45 @@ html, body {
     border-radius: 8px;
 }
 
-/* about section */
-.main-area .about-area {
-    background: rgb(213, 239, 250);
-    padding-bottom: 1rem;
+.carousel-control-next,
+.carousel-control-prev {
+    filter: invert(100%);
+    font-size: 4rem;
 }
-.main-area .about-area .about-img {
-    width: 50%;
-    padding-left: 26rem;
-    padding-top: 1rem;
+
+/* about section */
+.about-card {
+    background: rgb(213, 239, 250);
+}
+.about-area {
+    padding-left: 7rem;
+    padding-top: 2rem;
+}
+.about-img img {
+    width: 21rem;
 }
 
 .main-area .about-area h2 {
     font-weight: 800;
-}
-.main-area .about-area p {
-    font-size: 19px;
-    width: 75%;
+    padding-top: 0.5rem;
 }
 
+.main-area .about-area p {
+    font-size: 18px;
+    color: rgb(110, 110, 110);
+    width: 80%;
+}
+
+.main-area .about-area h2, p {
+    padding-left: 1rem;
+}
 
 /* skills section*/
+.skills-card {
+    background: rgb(249, 210, 200);
+    padding: 0 2rem;
+}
+
 .main-area .skills-area h2{
     font-weight: 800;
     padding-bottom: 0.5rem;
@@ -129,54 +169,52 @@ html, body {
     font-size: 22px;
 }
 
-.main-area .skills-area {
-    background: rgb(249, 210, 200);
-    padding-bottom: 3rem;
-}
-
 .main-area .skills-area .card-body {
     background: rgb(255, 240, 237);
     font-size: 20px;
     border-radius: 17px;
     margin: 10px 0px;
+    height: 17rem;
 }
 
 
 
 
 /* projects section*/
-.main-area .projects-area {
-    padding: 0rem 2rem;
+.projects-area {
+    padding: 0rem 3rem;
 }
 
-.main-area .projects-area .projects-title a {
+.projects-area .projects-title a {
     color: rgb(113, 144, 209);
 }
 
-.main-area .projects-area .projects-title a:hover {
+.projects-area .projects-title a:hover {
     color: grey;
     transition: color 0.6s ease;
     text-decoration: none;
 }
 
-.main-area .projects-area .projects {
+.projects {
     background: rgb(232, 248, 255);
-    padding: 0.5rem 0;
+    height: 18rem;
     margin: 2rem 0rem;
     transition: box-shadow .7s ease;
     border-radius: 17px;
+    padding: 0.5rem;
 }
 
-
+.projects-area img {
+    width: 12rem;
+}
+.projects-area .card-body {
+    padding: 0.5rem 0;
+}
 .main-area .projects-area h2 {
     font-weight: 800;
 }
 .main-area .projects-area .projects h5 {
     font-weight: 700;
-}
-
-.main-area .projects-area .projects .tcp {
-    font-size: 19.5px;
 }
 
 .main-area .projects-area .projects:hover {
@@ -187,7 +225,7 @@ html, body {
 /* footer section */
 .main-area .footer-area li {
     display: inline-block;
-    margin: 6px;
+    margin: 0.5em;
     list-style: none;
 }
 
@@ -204,5 +242,5 @@ html, body {
 }
 
 .main-area .footer-area {
-    padding: 5rem 0;
+    margin-top: 2rem;
 }
