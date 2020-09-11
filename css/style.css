@@ -129,7 +129,7 @@ html, body {
 
 /* about section */
 .about-card {
-    background: rgb(213, 239, 250);
+    background: rgb(229, 247, 255);
 }
 .about-area {
     padding-left: 7rem;
@@ -156,7 +156,7 @@ html, body {
 
 /* skills section*/
 .skills-card {
-    background: rgb(249, 210, 200);
+    background: rgb(255, 222, 213);
     padding: 0 2rem;
 }
 
@@ -181,6 +181,10 @@ html, body {
 
 
 /* projects section*/
+.projects-card {
+    background: rgb(229, 247, 255);
+}
+
 .projects-area {
     padding: 0rem 3rem;
 }
@@ -196,9 +200,9 @@ html, body {
 }
 
 .projects {
-    background: rgb(232, 248, 255);
+    background: rgb(200, 235, 253);
     height: 18rem;
-    margin: 2rem 0rem;
+    margin-top: 1rem;
     transition: box-shadow .7s ease;
     border-radius: 17px;
     padding: 0.5rem;
@@ -216,7 +220,6 @@ html, body {
 .main-area .projects-area .projects h5 {
     font-weight: 700;
 }
-
 .main-area .projects-area .projects:hover {
     box-shadow: 0px 5px 20px rgb(175, 185, 189);
 }
