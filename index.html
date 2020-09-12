@@ -148,60 +148,116 @@
                             <div class="row">
                                 <div class="col-lg-12 text-center projects-title">
                                     <h2>Projects</h2>
-                                    <h5>Check out more on my Github <a href="https://github.com/jodiex/">here</a>.</h5>
+                                    <h5>Check out more on my Github <a href="https://github.com/jodiex/" target="_blank">here</a>.</h5>
                                 </div>
                             </div>
                             <div class="container projects-list">
                                 <div class="row">
                                     <div class="col-lg-3 col-md-6 col-sm-12 d-flex align-items-stretch">
-                                        <div class="projects">
+                                        <div class="projects" data-toggle="modal" data-target="#dijkstrasModal">
                                             <div class="projects-img text-center py-2">
                                                 <img src="./images/dijkstras.png" alt="Project 1">
                                             </div>
                                             <div class="card-body">
                                                 <h5 class="card-title text-center">Dijkstra's Algorithm Visualizer</h5>
-                                                <!--<p class="card-text">Developed a web app which finds the shortest path between
+                                            </div>
+                                        </div>
+                                        <div class="modal fade" id="dijkstrasModal">
+                                            <div class="modal-dialog modal-dialog-centered">
+                                              <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title">Dijkstra's Algorithm Visualizer</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    Developed a web app which finds the shortest path between
                                                     two nodes using Dijkstra's algorithm, and visualizes each step of the algorithm in action.
-                                                    Built using <b>Javascript</b> and <b>React</b>.</p>-->
+                                                    Built using <b>Javascript</b> and <b>React</b>.
+                                                </div>
+                                              </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-lg-3 col-md-6 col-sm-12 d-flex align-items-stretch">
-                                        <div class="projects">
+                                        <div class="projects" data-toggle="modal" data-target="#tcpModal">
                                             <div class="projects-img text-center py-2">
                                                 <img src="./images/tcp-2.png" alt="Project 2">
                                             </div>
                                             <div class="card-body">
                                                 <h5 class="card-title text-center">Test Case Prioritization</h5>
-                                                <!--<p class="card-text">Created a <b>Python</b> script that retrieves and parses through
+                                            </div>
+                                        </div>
+                                        <div class="modal fade" id="tcpModal">
+                                            <div class="modal-dialog modal-dialog-centered">
+                                              <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title">Test Case Prioritization</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    Created a <b>Python</b> script that retrieves and parses through
                                                     automated test suite results and generates priority values for
                                                     each test case based on pass/fail and its historical data. Test case data 
-                                                    is then visualized on a dashboard built using <b>React</b>.</p>-->
+                                                    is then visualized on a dashboard built using <b>React</b>.
+                                                </div>
+                                              </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-lg-3 col-md-6 col-sm-12 d-flex align-items-stretch">
-                                        <div class="projects">
+                                        <div class="projects" data-toggle="modal" data-target="#snakeModal">
                                             <div class="projects-img text-center py-2">
                                                 <img src="./images/snake.png" alt="Project 3">
                                             </div>
                                             <div class="card-body">
                                                 <h5 class="card-title text-center">Snake</h5>
-                                                <!--<p class="card-text"><br>Recreated the classic game of Snake using <b>HTML</b>, <b>CSS</b>, 
-                                                    <b>Javascript</b> and <b>React</b>.</p>-->
+                                            </div>
+                                        </div>
+                                        <div class="modal fade" id="snakeModal">
+                                            <div class="modal-dialog modal-dialog-centered">
+                                              <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title">Snake</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    Recreated the classic game of Snake using <b>HTML</b>, <b>CSS</b>, 
+                                                    <b>Javascript</b> and <b>React</b>.
+                                                </div>
+                                              </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-lg-3 col-md-6 col-sm-12 d-flex align-items-stretch">
-                                        <div class="projects">
+                                        <div class="projects" data-toggle="modal" data-target="#tetrisModal">
                                             <div class="projects-img text-center py-2">
                                                 <img src="./images/tetris.png" alt="Project 4">
                                             </div>
                                             <div class="card-body">
                                                 <h5 class="card-title text-center">Two-Player Tetris</h5>
-                                                <!--<p class="card-text"><br>Remade the classic game of Tetris using <b>C++</b> with
-                                                    two-player gameplay and special actions. Utilized object-oriented programming principles and
-                                                    design patterns like MVC, Observer, Decorator and Factory Method.</p>-->
+                                            </div>
+                                        </div>
+                                        <div class="modal fade" id="tetrisModal">
+                                            <div class="modal-dialog modal-dialog-centered">
+                                              <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title">Two-Player Tetris</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    Remade the classic game of Tetris using <b>C++</b> with
+                                                    two-player gameplay and special actions. Utilized <b>object-oriented programming principles</b> and
+                                                    <b>design patterns</b> like MVC, Observer, Decorator and Factory Method.
+                                                </div>
+                                              </div>
                                             </div>
                                         </div>
                                     </div>

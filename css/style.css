@@ -127,6 +127,16 @@ html, body {
     font-size: 4rem;
 }
 
+.modal-content {
+    background-color: rgb(229, 247, 255);
+    border: 0px;
+    border-radius: 14px;
+}
+
+.modal-title {
+    font-weight: 700;
+}
+
 /* about section */
 .about-card {
     background: rgb(229, 247, 255);
