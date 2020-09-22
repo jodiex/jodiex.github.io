@@ -172,19 +172,19 @@ html, body {
 
 .main-area .skills-area h2{
     font-weight: 800;
-    padding: 1rem 0;
 }
 .main-area .skills-area h4{
     font-weight: 700;
     font-size: 22px;
+    padding-top: 0;
 }
 
 .main-area .skills-area .card-body {
     background: rgb(255, 240, 237);
     font-size: 20px;
     border-radius: 17px;
-    margin: 10px 0px;
-    height: 17rem;
+    margin: 1rem 0;
+    height: 22rem;
 }
 
 
