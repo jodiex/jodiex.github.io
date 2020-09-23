@@ -16,17 +16,17 @@
         <div class="navigation">
             <img src="images/logo.png" data-target="#carouselSlides" data-slide-to="0" class="logo justify-content-center">
             <ul class="nav justify-content-center">
-                <li class="nav-item active">
-                    <a class="nav-link" data-target="#carouselSlides" data-slide-to="0">Home<span class="sr-only">(current)</span></a>
+                <li class="nav-item">
+                    <a class="nav-link active" data-target="#carouselSlides" data-slide-to="0" id="home-link">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" data-target="#carouselSlides" data-slide-to="1">About</a>
+                    <a class="nav-link" data-target="#carouselSlides" data-slide-to="1" id="about-link">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" data-target="#carouselSlides" data-slide-to="2">Skills</a>
+                    <a class="nav-link" data-target="#carouselSlides" data-slide-to="2" id="skills-link">Skills</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" data-target="#carouselSlides" data-slide-to="3">Projects</a>
+                    <a class="nav-link" data-target="#carouselSlides" data-slide-to="3" id="projects-link">Projects</a>
                 </li>
             </ul>
         </div>
@@ -303,5 +303,30 @@
 
     <script src="js/jquery.3.4.1.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script>
+        $('#carouselSlides').on('slide.bs.carousel', function(event) {
+            var to = event.to;
+            var elems = document.getElementsByClassName("nav-link")
+            for (let i = 0; i < elems.length; i++) {
+                elems[i].classList.remove("active");
+            }
+            switch (to) {
+                case 0:
+                    document.getElementById("home-link").classList.add("active");
+                    break;
+                case 1:
+                    document.getElementById("about-link").classList.add("active");
+                    break;
+                case 2:
+                    document.getElementById("skills-link").classList.add("active");
+                    break;
+                case 3:
+                    document.getElementById("projects-link").classList.add("active");
+                    break;
+                default:
+                    console.log(type(id))
+            }
+        })
+    </script>
 </body>
 </html>

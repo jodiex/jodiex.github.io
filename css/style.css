@@ -6,11 +6,6 @@ html, body {
     font-family: 'Nunito', Helvetica, sans-serif;
 }
 
-@font-face {
-    font-family: 'Nunito';
-    src: url('fonts/Nunito/Nunito-Regular.ttf');
-}
-
 /* nav bar */
 .header-area .logo {
     padding-top: 0.5em;
@@ -40,11 +35,8 @@ html, body {
 }
 
 
-.header-area .navigation .nav .active a {
-    background: rgb(139, 188, 219);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.nav .active {
+    -webkit-text-fill-color: rgb(139, 188, 219);
 }
 
 /* site intro */
