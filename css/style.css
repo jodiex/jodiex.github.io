@@ -29,6 +29,10 @@ html, body {
     font-family: 'Inter-600', Helvetica, sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     transition: background 0.6s ease;
     background: #fff;
@@ -65,7 +69,7 @@ body {
     background-color: #9FCEEB;
 }
 .color-red {
-    background-color: #F3C8B5;
+    background-color: #FFC8AE;
 }
 
 /* nav bar */
@@ -99,15 +103,19 @@ body {
     color: black !important;
 }
 
-.nav-item .color-blue {
+.nav-color-blue {
     color: #62A7D2;
+    transition: color 0.6s ease;
 }
-.nav-item .color-blue:hover {
+.nav-color-blue:hover {
     color: #235574;
 }
-
-.nav-item .color-blue .active {
-    color: black !important;
+.nav-color-darkblue {
+    color: #2276AC;
+    transition: color 0.6s ease;
+}
+.nav-color-darkblue:hover {
+    color: #074066;
 }
 
 /* landing */
@@ -171,7 +179,48 @@ h3 {
 
 .highlight {
     background: linear-gradient(180deg,rgba(255,255,255,0) 60%, #ffc8ae 40%);
-  }
+}
+
+#home a {
+    padding-top: 60px;
+}
+#home a span {
+    position: absolute;
+    bottom: 4em;
+    left: 50%;
+    width: 24px;
+    height: 24px;
+    margin-left: -12px;
+    border-left: 0.4em solid #000;
+    border-bottom: 0.4em solid #000;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-animation: moveArrow 1s infinite;
+    animation: moveArrow 1s infinite;
+    box-sizing: border-box;
+}
+@-webkit-keyframes moveArrow {
+    0% {
+        -webkit-transform: rotate(-45deg) translate(0, 0);
+    }
+    40% {
+        -webkit-transform: rotate(-45deg) translate(-1em, 10px);
+    }
+    80% {
+        -webkit-transform: rotate(-45deg) translate(0, 0);
+    }
+}
+@keyframes moveArrow {
+    0% {
+        transform: rotate(-45deg) translate(0, 0);
+    }
+    40% {
+        transform: rotate(-45deg) translate(-10px, 10px);
+    }
+    80% {
+        transform: rotate(-45deg) translate(0, 0);
+    }
+}
 
 /* about */
 .blue {
@@ -183,15 +232,16 @@ h3 {
 
 /* projects */
 .projects .card {
-    margin-bottom: 2em;
     padding-left: 2em;
-    padding: 1em;
+    padding: 1.5em;
+    width: 15em;
 }
 .projects .card-title {
     margin-bottom: 0;
 }
 .projects .card-body {
-    padding-bottom: 0;
+    padding: 0;
+    padding-top: 1em;
 }
 
 /* experience */
@@ -202,8 +252,8 @@ h3 {
     background: linear-gradient(270deg,rgba(255,255,255,0) 60%, rgba(98, 167, 210, 0.5) 40%);
 }
 .experience .card-body {
-    padding-left: 0;
-    padding-right: 0;
+    padding: 0;
+    padding-top: 1em;
 }
 .experience .card-text {
     margin-bottom: 0;

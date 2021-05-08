@@ -46,10 +46,15 @@
             var $window = $(window),
                 $body = $('body'),
                 $panel = $('.panel'),
-                $navigation = $('.navigation');
+                $navigation = $('.navigation'),
+                $navLink = $('.nav-link'),
+                $home = $('#home-link'),
+                $about = $('#about-link'),
+                $projects = $('#projects-link'),
+                $experience = $('#experience-link');
             
-            // Change 33% earlier than scroll position so colour is there when you arrive.
-            var scroll = $window.scrollTop() + ($window.height() / 3);
+            // Change colour 50% earlier than scroll position
+            var scroll = $window.scrollTop() + ($window.height() / 2);
             
             $panel.each(function () {
                 var $this = $(this);
@@ -65,14 +70,56 @@
                     $navigation.removeClass(function (index, css) {
                         return (css.match (/(^|\s)color-\S+/g) || []).join(' ');
                     });
+                    $navLink.removeClass(function (index, css) {
+                        return (css.match (/(^|\s)nav-color-\S+/g) || []).join(' ');
+                    });
+                    $navLink.removeClass(function (index, css) {
+                        return (css.match (/active/g) || []).join(' ');
+                    });
                     
                     // Add class of currently active div
                     $body.addClass('color-' + $(this).data('color'));
                     $navigation.addClass('color-' + $(this).data('color'));
+                    switch($(this).data('id')) {
+                        case 'home':
+                            $home.addClass('active');
+                            $navLink.addClass('nav-color-blue');
+                            break;
+                        case 'about':
+                            $about.addClass('active');
+                            $navLink.addClass('nav-color-blue');
+                            break;
+                        case 'projects':
+                            $projects.addClass('active');
+                            $navLink.addClass('nav-color-darkblue');
+                            break;
+                        case 'experience':
+                            $experience.addClass('active');
+                            $navLink.addClass('nav-color-darkblue');
+                            break;
+                    }
                 }
-            });    
-            
-            }).scroll();
+            });
+        }).scroll();
+
+        $(window).scroll(function() {
+            // get scroll position
+            var topWindow = $(window).scrollTop();
+            // multiply by 1.75 so the arrow will become transparent 3/4 up the page
+            var topWindow = topWindow * 1.75;
+
+            //get height of window
+            var windowHeight = $(window).height();
+
+            // set position as percentage of how far the user has scrolled 
+            var position = topWindow / windowHeight;
+            // invert the percentage
+            position = 1 - position;
+
+            // define arrow opacity as based on how far up the page the user has scrolled
+            // no scrolling = 1, half-way up the page = 0
+            $('.arrow').css('opacity', position);
+        });
     </script>
 </body>
 </html>
