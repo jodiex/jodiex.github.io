@@ -1,159 +1,44 @@
-/* if viewport is equal to or less than 1024px */
-@media screen and (max-width: 1024px){
-    .header-area .navigation .navbar .navbar-brand,
-    .header-area .navigation .navbar,
-    .main-area .projects-area {
-        padding: 2%;
-        margin: 0;
-    }
-    .main-area .banner .site-intro {
-        padding-top: 1rem;
-        padding-left: 4rem;
-    }
-    .button {
-        padding: 0.5rem 1rem;
-        width: 100px;
-    }
-    .main-area .banner .site-intro-pic img {
-        padding-bottom: 2rem;
-        padding-right: 0;
-    }
-    .main-area .about-area .about-img {
-        width: 100%;
-        padding-left: 20%;
-    }
-    .main-area .about-area p {
-        width: 80%;
+/* if viewport is equal to or less than 992px */
+@media all and (max-width: 992px){
+    #experience .card {
+        width: 15em;
     }
 }
 
+/* if viewport is equal to or less than 767px */
+@media all and (max-width: 767px){
+    #experience .card {
+        width: 8em;
+    }
+}
 
-/* if viewport is equal to or less than 768px */
-@media screen and (max-width: 768px){
-    .header-area .navigation .navbar .navbar-brand,
-    .header-area .navigation .navbar,
-    .main-area .projects-area {
-        padding: 2%;
-        margin: 0;
+/* if viewport is equal to or less than 575px */
+@media all and (max-width: 575px){
+    #projects .card {
+        width: 19em;
     }
-    .main-area .banner .site-intro {
-        padding-top: 5%;
-        padding-left: 2.5rem;
-    }
-    .main-area .banner .site-intro h1{
-        font-size: 45px;
-    }
-    .main-area .banner .site-intro h2{
-        padding-top: 5rem;
-        font-size: 30px;
-    }
-    .main-area .banner .site-intro h4{
-        font-size: 20px;
-    }
-    .button {
-        padding: 0.5rem 1rem;
-    }
-    .main-area .banner .site-intro-pic img {
-        padding-bottom: 2rem;
-        padding-right: 0;
-        width: 20rem;
-    }
-    .main-area .about-area {
-        padding-left: 20px;
-    }
-    .main-area .about-area .about-img {
-        width: 10rem;
-        padding-top: 3rem;
-        padding-left: 3rem;
-    }
-    .main-area .about-area p {
-        width: 90%;
-    }
-    .main-area .footer-area li {
-        padding-right: 24px;
-    }
-    .main-area .footer-area li a {
-        letter-spacing: 1rem;
-    }
-    .main-area .footer-area {
-        padding: 1.5rem 0;
+    #experience .card {
+        width: 19em;
     }
 }
 
 /* if viewport is equal to or less than 425px */
-@media screen and (max-width: 425px){
-    .main-area .banner .site-intro-pic img {
-        padding-bottom: 2rem;
-        padding-left: 4rem;
+@media all and (max-width: 425px){
+    .nav-link {
+        padding: 0.5em;
     }
-    .main-area .about-area .about-img {
-        display: none;
+    h1 {
+        font-size: 3em;
     }
-    .main-area .about-area p {
-        width: 100%;
+    
+    h2 {
+        font-size: 1.5em;
     }
-}
-
-/* if viewport is equal to or less than 375px */
-@media screen and (max-width: 375px){
-    .main-area .banner .site-intro-pic img {
-        padding-bottom: 2rem;
-        padding-left: 1.5rem;
+    
+    h3 {
+        font-size: 1em;
     }
-    .main-area .about-area .about-img {
-        display: none;
-    }
-    .main-area .about-area p {
-        width: 90%;
-    }
-}
-
-/* if viewport is equal to or less than 320px */
-@media screen and (max-width: 320px){
-    .header-area .navigation .navbar .navbar-brand,
-    .header-area .navigation .navbar,
-    .main-area .projects-area {
-        padding: 2%;
-        margin: 0;
-    }
-    .main-area .banner .site-intro {
-        padding-left: 2.5rem;
-    }
-    .main-area .banner .site-intro h1{
-        font-size: 45px;
-    }
-    .main-area .banner .site-intro h2{
-        padding-top: 5rem;
-        font-size: 30px;
-    }
-    .main-area .banner .site-intro h4{
-        font-size: 20px;
-    }
-    .button {
-        padding: 0.5rem 1rem;
-        width: 100px;
-    }
-    .main-area .banner .site-intro-pic img {
-        padding-bottom: 2rem;
-        padding-left: 0;
-        width: 80rem;
-    }
-    .main-area .about-area {
-        padding-left: 20px;
-    }
-    .main-area .about-area .about-img {
-        display: none;
-    }
-    .main-area .about-area p {
-        width: 90%;
-    }
-    .main-area .footer-area li {
-        padding-right: 24px;
-    }
-    .main-area .footer-area li a {
-        letter-spacing: 1rem;
-    }
-    .main-area .footer-area {
-        padding: 1.5rem 0;
+    .landing {
+        margin-top: 2em;
     }
 }

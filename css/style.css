@@ -58,6 +58,17 @@ body {
     background: linear-gradient(270deg,rgba(255,255,255,0) 60%, rgba(255, 182, 151, 0.7) 40%);
 }
 
+.horizontal-header {
+    justify-content: center;
+    margin-bottom: 0.8em;
+    background: linear-gradient(180deg,rgba(255,255,255,0) 60%, rgba(255, 182, 151, 0.7) 40%);
+}
+
+.header-wrapper {
+    justify-content: center;
+    margin-top: 3em;
+}
+
   /* colours */
 .color-white {
     background-color: #fff;
@@ -177,7 +188,7 @@ h3 {
     background: #FF6E5A;
     background-clip: padding-box;
     transition: background .6s ease;
-    margin: 0 1vh 0 0;
+    margin: 0 1vw 0 0;
 }
 
 .button:hover {
@@ -216,8 +227,8 @@ h3 {
     position: absolute;
     bottom: 3em;
     left: 50%;
-    width: 24px;
-    height: 24px;
+    width: 1.5em;
+    height: 1.5em;
     margin-left: -12px;
     border-left: 0.4em solid #000;
     border-bottom: 0.4em solid #000;
@@ -272,7 +283,7 @@ h3 {
 #projects .card {
     padding-left: 2em;
     padding: 1.5em;
-    width: 15em;
+    width: 17vw;
 }
 #projects .card-title {
     margin-bottom: 0;
@@ -296,10 +307,13 @@ h3 {
 
 /* experience */
 #experience .card {
-    width: 20em;
+    width: 22vw;
 }
 #experience .vertical-header {
     background: linear-gradient(270deg,rgba(255,255,255,0) 60%, rgba(98, 167, 210, 0.5) 40%);
+}
+#experience .horizontal-header {
+    background: linear-gradient(180deg,rgba(255,255,255,0) 60%, rgba(98, 167, 210, 0.5) 40%);
 }
 #experience .card-body {
     padding: 0;
