@@ -8,325 +8,118 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:400,500,600,700,800,900">
     <script src="https://kit.fontawesome.com/5963884a49.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!---------- HEADER ---------->
-    <header class="header-area">
-        <div class="navigation">
-            <img src="resources/logo.png" data-target="#carouselSlides" data-slide-to="0" class="logo justify-content-center">
-            <ul class="nav justify-content-center">
-                <li class="nav-item">
-                    <a class="nav-link active" data-target="#carouselSlides" data-slide-to="0" id="home-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-target="#carouselSlides" data-slide-to="1" id="about-link">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-target="#carouselSlides" data-slide-to="2" id="skills-link">Skills</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-target="#carouselSlides" data-slide-to="3" id="projects-link">Projects</a>
-                </li>
-            </ul>
-        </div>
+    <header class="header">
+        <div data-include="navbar"></div>
     </header>
 
     <!---------- MAIN ---------->
     <main class="main-area">
-        <div id="carouselSlides" class="carousel slide" data-interval="false" data-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <section class="banner">
-                        <div class="card">
-                            <!----------- BANNER -->
-                            <div class="row">
-                                <div class="col-md-6 col-lg-6 site-intro">
-                                    <h2 class="intro-text">Hey,</h2>
-                                    <h1 class="intro-text">I'm Jodie. 👋</h1>
-                                    <h4 class="intro-text">Software and Web Developer.</h4>
-                                    <div class="intro-buttons">
-                                        <div class="d-flex flex-row flex-wrap">
-                                            <button type="button" class="btn button" onclick="window.open('https:\/\/drive.google.com/file/d/1L3effyQkcd6qfKfbaXG8p1QkRuyU0qap/view', '_blank');">Resume</button>
-                                            <button type="button" class="btn button" onclick="window.open('https:\/\/github.com/jodiex','_blank');">Github</button>
-                                            <button type="button" class="btn button" onclick="window.open('https:\/\/linkedin.com/in/jodie-xiang/','_blank');">LinkedIn</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 col-lg-6 site-intro-pic">
-                                    <img src="resources/intro-pic-3.png" alt="banner graphic" class="img-fluid">
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-                <div class="carousel-item">
-                <div class="card about-card">
-                    <!---------- ABOUT ---------->
-                    <section class="about-area" id="about">
-                        <div class="row">
-                            <div class="col-lg-5 col-md-5 about-img">
-                                <img src="resources/about-me-pic.png" alt="programming icon">
-                            </div>
-                            <div class="col-lg-7 col-md-7 col-sm-12">
-                                <h2>About Me</h2>
-                                <p class="about-para">
-                                    📚 Third year Computer Science student at the University of Waterloo.<br>
-                                    👩‍💻 Experienced in full-stack web development and object-oriented programming.<br>
-                                    🌎 Driven by projects that do social good.<br>
-                                    🎨 Interested in digital art & design and 20th century history.<br>
-                                    📌 Currently learning Mandarin and mobile development with Swift.<br>
-                                    💼 Seeking Winter 2021 internships!
-                                </p>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-                </div>
-                <div class="carousel-item">
-                <div class="card skills-card">
-                    <!---------- SKILLS ---------->
-                    <section class="skills-area" id="skills">
-                        <div class="row">
-                            <div class="col-lg-12 text-center">
-                                <h2>Skills</h2>
-                            </div>
-                        </div>
-                        <div class="container skills-list">
-                            <div class="row justify-content-around">
-                                <div class="col-lg-4 col-sm-12 text-center">
-                                    <div class="card-body">
-                                        <h4 class="card-title pt-2">Languages</h4>
-                                        <div class="pt-1 card-text">
-                                            <ul class="list-unstyled">
-                                                <li>C/C++</li>
-                                                <li>Java</li>
-                                                <li>Javascript (ES6)</li>
-                                                <li>SQL</li>
-                                                <li>Python</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-sm-12 text-center">
-                                    <div class="card-body">
-                                        <h4 class="card-title pt-2">Tools/Technologies</h4>
-                                        <div class="pt-1 card-text">
-                                            <ul class="list-unstyled">
-                                                <li>HTML/CSS</li>
-                                                <li>REST APIs</li>
-                                                <li>Bash</li>
-                                                <li>Jira</li>
-                                                <li>Git</li>
-                                                <li>MySQL</li>
-                                                <li>Figma</li>
-                                                <li>IntelliJ IDEA</li> 
-                                                <li>Microsoft Visual Studio</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-sm-12 text-center">
-                                    <div class="card-body">
-                                        <h4 class="card-title pt-2">Frameworks</h4>
-                                        <div class="pt-1 card-text">
-                                            <ul class="list-unstyled">
-                                                <li>React.js</li>
-                                                <li>Vue.js</li>
-                                                <li>Bootstrap</li>
-                                                <li>Django</li>
-                                                <li>Semantic UI</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-                </div>
-                <div class="carousel-item">
-                <div class="card projects-card">
-                    <!---------- PROJECTS ---------->
-                    <section class="projects-area" id="projects">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-lg-12 text-center projects-title">
-                                    <h2>Projects</h2>
-                                    <h5>Check out more on my Github <a href="https://github.com/jodiex/" target="_blank">here</a>.</h5>
-                                </div>
-                            </div>
-                            <div class="container projects-list">
-                                <div class="row">
-                                    <div class="col-lg-3 col-md-6 col-sm-12 d-flex align-items-stretch">
-                                        <div class="projects" data-toggle="modal" data-target="#dijkstrasModal">
-                                            <div class="projects-img text-center py-2">
-                                                <img src="./resources/dijkstras.png" alt="Project 1">
-                                            </div>
-                                            <div class="card-body">
-                                                <h5 class="card-title text-center">Dijkstra's Algorithm Visualizer</h5>
-                                            </div>
-                                        </div>
-                                        <div class="modal fade" id="dijkstrasModal">
-                                            <div class="modal-dialog modal-dialog-centered">
-                                              <div class="modal-content">
-                                                <div class="modal-header">
-                                                    <h5 class="modal-title">Dijkstra's Algorithm Visualizer</h5>
-                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                        <span aria-hidden="true">&times;</span>
-                                                    </button>
-                                                </div>
-                                                <div class="modal-body">
-                                                    Developed a web app which finds the shortest path between
-                                                    two nodes using Dijkstra's algorithm, and visualizes each step of the algorithm in action.
-                                                    Built using <b>Javascript</b> and <b>React</b>.
-                                                </div>
-                                              </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-6 col-sm-12 d-flex align-items-stretch">
-                                        <div class="projects" data-toggle="modal" data-target="#tcpModal">
-                                            <div class="projects-img text-center py-2">
-                                                <img src="./resources/tcp-2.png" alt="Project 2">
-                                            </div>
-                                            <div class="card-body">
-                                                <h5 class="card-title text-center">Test Case Prioritization</h5>
-                                            </div>
-                                        </div>
-                                        <div class="modal fade" id="tcpModal">
-                                            <div class="modal-dialog modal-dialog-centered">
-                                              <div class="modal-content">
-                                                <div class="modal-header">
-                                                    <h5 class="modal-title">Test Case Prioritization</h5>
-                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                        <span aria-hidden="true">&times;</span>
-                                                    </button>
-                                                </div>
-                                                <div class="modal-body">
-                                                    Created a <b>Python</b> script that retrieves and parses through
-                                                    automated test suite results and generates priority values for
-                                                    each test case based on pass/fail and its historical data. Test case data 
-                                                    is then visualized on a dashboard built using <b>React</b>.
-                                                </div>
-                                              </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-6 col-sm-12 d-flex align-items-stretch">
-                                        <div class="projects" data-toggle="modal" data-target="#mealreliefModal">
-                                            <div class="projects-img text-center py-2">
-                                                <img src="./resources/mealrelief.png" alt="Project 3">
-                                            </div>
-                                            <div class="card-body">
-                                                <h5 class="card-title text-center">MealRelief</h5>
-                                            </div>
-                                        </div>
-                                        <div class="modal fade" id="mealreliefModal">
-                                            <div class="modal-dialog modal-dialog-centered">
-                                              <div class="modal-content">
-                                                <div class="modal-header">
-                                                    <h5 class="modal-title">MealRelief</h5>
-                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                        <span aria-hidden="true">&times;</span>
-                                                    </button>
-                                                </div>
-                                                <div class="modal-body">
-                                                    Built a web application using <b>React</b> and <b>Django Rest Framework</b> to help low-income
-                                                    individuals find free meals donated by food providers (restaurants, grocery stores, etc.)
-                                                    and discourage food waste in the industry
-                                                </div>
-                                              </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-6 col-sm-12 d-flex align-items-stretch">
-                                        <div class="projects" data-toggle="modal" data-target="#tetrisModal">
-                                            <div class="projects-img text-center py-2">
-                                                <img src="./resources/tetris.png" alt="Project 4">
-                                            </div>
-                                            <div class="card-body">
-                                                <h5 class="card-title text-center">Two-Player Tetris</h5>
-                                            </div>
-                                        </div>
-                                        <div class="modal fade" id="tetrisModal">
-                                            <div class="modal-dialog modal-dialog-centered">
-                                              <div class="modal-content">
-                                                <div class="modal-header">
-                                                    <h5 class="modal-title">Two-Player Tetris</h5>
-                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                        <span aria-hidden="true">&times;</span>
-                                                    </button>
-                                                </div>
-                                                <div class="modal-body">
-                                                    Remade the classic game of Tetris using <b>C++</b> with
-                                                    two-player gameplay and special actions. Utilized <b>object-oriented programming principles</b> and
-                                                    <b>design patterns</b> like MVC, Observer, Decorator and Factory Method.
-                                                </div>
-                                              </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-                </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselSlides" role="button" data-slide="prev">
-                <span><i class="fas fa-angle-left" aria-hidden="true"></i></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselSlides" role="button" data-slide="next">
-                <span><i class="fas fa-angle-right dark" aria-hidden="true"></i></span>
-                <span class="sr-only">Next</span>
-            </a>
-        </div>
+        <div data-include="landing"></div>
+        <div data-include="about"></div>
+        <div data-include="projects"></div>
+        <div data-include="experience"></div>
 
         <!---------- FOOTER ---------->
-        <section class="footer-area">
-            <div class="container">
-                <div class="d-flex flex-row justify-content-center social">
-                    <ul>
-                        <li><a href="https://drive.google.com/file/d/1L3effyQkcd6qfKfbaXG8p1QkRuyU0qap/view" target="_blank"><i class="fas fa-file-alt"></i></a></li>
-                        <li><a href="https://github.com/jodiex" target="_blank"><i class="fab fa-github"></i></a></li>
-                        <li><a href="https://www.linkedin.com/in/jodie-xiang/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-                    </ul>
-                </div>
-                <div class="d-flex flex-row justify-content-center copyright text-center">
-                    <p>Copyright © Jodie Xiang. All rights reserved.</p>
-                </div>
-            </div>
-        </section>
+        <div data-include="footer"></div>
     </main>
 
     <script src="js/jquery.3.4.1.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script>
-        $('#carouselSlides').on('slide.bs.carousel', function(event) {
-            var to = event.to;
-            var elems = document.getElementsByClassName("nav-link")
-            for (let i = 0; i < elems.length; i++) {
-                elems[i].classList.remove("active");
-            }
-            switch (to) {
-                case 0:
-                    document.getElementById("home-link").classList.add("active");
-                    break;
-                case 1:
-                    document.getElementById("about-link").classList.add("active");
-                    break;
-                case 2:
-                    document.getElementById("skills-link").classList.add("active");
-                    break;
-                case 3:
-                    document.getElementById("projects-link").classList.add("active");
-                    break;
-                default:
-                    console.log(type(id))
-            }
+        // add html from /views folder
+        $(function () {
+            var includes = $('[data-include]')
+            $.each(includes, function () {
+                var file = 'views/' + $(this).data('include') + '.html'
+                $(this).load(file)
+            })
         })
+
+        // change background colour while scrolling
+        $(window).scroll(function() {
+            // selectors
+            var $window = $(window),
+                $body = $('body'),
+                $panel = $('.panel'),
+                $navigation = $('.navigation'),
+                $navLink = $('.nav-link'),
+                $home = $('#home-link'),
+                $about = $('#about-link'),
+                $projects = $('#projects-link'),
+                $experience = $('#experience-link');
+            
+            // Change colour 50% earlier than scroll position
+            var scroll = $window.scrollTop() + ($window.height() / 2);
+            
+            $panel.each(function () {
+                var $this = $(this);
+                
+                // if position is within range of this panel.
+                // So position of (position of top of div <= scroll position) && (position of bottom of div > scroll position).
+                // Remember we set the scroll to 33% earlier in scroll var.
+                if ($this.position().top <= scroll && $this.position().top + $this.height() > scroll) {
+                    // Remove all classes on body with color-
+                    $body.removeClass(function (index, css) {
+                        return (css.match (/(^|\s)color-\S+/g) || []).join(' ');
+                    });
+                    $navigation.removeClass(function (index, css) {
+                        return (css.match (/(^|\s)color-\S+/g) || []).join(' ');
+                    });
+                    $navLink.removeClass(function (index, css) {
+                        return (css.match (/(^|\s)nav-color-\S+/g) || []).join(' ');
+                    });
+                    $navLink.removeClass(function (index, css) {
+                        return (css.match (/active/g) || []).join(' ');
+                    });
+                    
+                    // Add class of currently active div
+                    $body.addClass('color-' + $(this).data('color'));
+                    $navigation.addClass('color-' + $(this).data('color'));
+                    switch($(this).data('id')) {
+                        case 'home':
+                            $home.addClass('active');
+                            $navLink.addClass('nav-color-blue');
+                            break;
+                        case 'about':
+                            $about.addClass('active');
+                            $navLink.addClass('nav-color-blue');
+                            break;
+                        case 'projects':
+                            $projects.addClass('active');
+                            $navLink.addClass('nav-color-darkblue');
+                            break;
+                        case 'experience':
+                            $experience.addClass('active');
+                            $navLink.addClass('nav-color-darkblue');
+                            break;
+                    }
+                }
+            });
+        }).scroll();
+
+        $(window).scroll(function() {
+            // get scroll position
+            var topWindow = $(window).scrollTop();
+            // multiply by 1.75 so the arrow will become transparent 3/4 up the page
+            var topWindow = topWindow * 1.75;
+
+            //get height of window
+            var windowHeight = $(window).height();
+
+            // set position as percentage of how far the user has scrolled 
+            var position = topWindow / windowHeight;
+            // invert the percentage
+            position = 1 - position;
+
+            // define arrow opacity as based on how far up the page the user has scrolled
+            // no scrolling = 1, half-way up the page = 0
+            $('.arrow').css('opacity', position);
+        });
     </script>
 </body>
 </html>
