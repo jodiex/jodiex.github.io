@@ -1,14 +1,23 @@
-/* if viewport is equal to or less than 992px */
-@media all and (max-width: 992px){
+/* if viewport is equal to or less than 991px */
+@media all and (max-width: 991px){
+    #projects .card {
+        width: 7em;
+    }
     #experience .card {
         width: 15em;
+    }
+    .landing {
+        margin-left: 6em !important;
     }
 }
 
 /* if viewport is equal to or less than 767px */
 @media all and (max-width: 767px){
     #experience .card {
-        width: 8em;
+        width: 6em;
+    }
+    .landing {
+        margin-left: 3em !important;
     }
 }
 
@@ -19,6 +28,9 @@
     }
     #experience .card {
         width: 19em;
+    }
+    .landing {
+        margin-left: 1em !important;
     }
 }
 
@@ -32,13 +44,14 @@
     }
     
     h2 {
-        font-size: 1.5em;
+        font-size: 2em;
     }
     
     h3 {
         font-size: 1em;
     }
     .landing {
-        margin-top: 2em;
+        margin-top: 1.5em;
+        margin-left: 1em !important;
     }
 }
