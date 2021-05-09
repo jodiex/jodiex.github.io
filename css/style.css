@@ -47,7 +47,7 @@ body {
 }
 
 .card {
-    border-radius: 20px;
+    border-radius: 1.5em;
     border: 0;
     padding: 2em;
 }
@@ -83,6 +83,7 @@ body {
 }
 
 .navigation {
+    padding-top: 8vh;
     transition: background 0.6s ease;
 }
 
@@ -90,7 +91,7 @@ body {
     text-transform: lowercase;
     font-size: 1.2em;
     padding: 2rem;
-    padding-top: 8vh;
+    padding-top: 0;
     color: #62A7D2;
 }
 
@@ -184,9 +185,10 @@ h3 {
 #home a {
     padding-top: 60px;
 }
+
 #home a span {
     position: absolute;
-    bottom: 4em;
+    bottom: 3em;
     left: 50%;
     width: 24px;
     height: 24px;
@@ -204,7 +206,7 @@ h3 {
         -webkit-transform: rotate(-45deg) translate(0, 0);
     }
     40% {
-        -webkit-transform: rotate(-45deg) translate(-1em, 10px);
+        -webkit-transform: rotate(-45deg) translate(-1vh, 1vh);
     }
     80% {
         -webkit-transform: rotate(-45deg) translate(0, 0);
@@ -215,7 +217,7 @@ h3 {
         transform: rotate(-45deg) translate(0, 0);
     }
     40% {
-        transform: rotate(-45deg) translate(-10px, 10px);
+        transform: rotate(-45deg) translate(-1vh, 1vh);
     }
     80% {
         transform: rotate(-45deg) translate(0, 0);
@@ -230,32 +232,79 @@ h3 {
     color: #FF6E5A;
 }
 
+#about a {
+    color: #62A7D2;
+}
+
+#about a:hover {
+    color: #2c6d96;
+    text-decoration: none;
+    transition: all ease-in-out 300ms;
+}
+
 /* projects */
-.projects .card {
+#projects .card {
     padding-left: 2em;
     padding: 1.5em;
     width: 15em;
 }
-.projects .card-title {
+#projects .card-title {
     margin-bottom: 0;
 }
-.projects .card-body {
+#projects .card-body {
     padding: 0;
     padding-top: 1em;
 }
 
+#projects .overlay {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    transition: .5s ease;
+    background-color: white;
+    justify-content: center;
+    padding: 1em;
+    border-radius: 1.5em;
+}
+
+#projects .overlay p {
+    font-size: 0.9em;
+    font-family: 'Inter-400', Helvetica, sans-serif;
+}
+
+#projects .card:hover .overlay {
+    opacity: 1;
+}
+
+#projects a {
+    color: #62A7D2;
+    margin-right: 0.5em;
+}
+
+#projects a:hover {
+    color: #2c6d96;
+    text-decoration: none;
+    transition: all ease-in-out 300ms;
+}
+
+
 /* experience */
-.experience .card {
+#experience .card {
     width: 20em;
 }
-.experience .vertical-header {
+#experience .vertical-header {
     background: linear-gradient(270deg,rgba(255,255,255,0) 60%, rgba(98, 167, 210, 0.5) 40%);
 }
-.experience .card-body {
+#experience .card-body {
     padding: 0;
     padding-top: 1em;
 }
-.experience .card-text {
+#experience .card-text {
     margin-bottom: 0;
 }
 
