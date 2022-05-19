@@ -38,6 +38,14 @@ body {
     background: #fff;
 }
 
+:root {
+    --faded: rgba(255, 182, 151, 0.7) 40%;
+    --black: rgba(255,255,255,0) 60%;
+    --white: #fff;
+    --bg1: #C8E6F9;
+    --bg2: #9FCEEB;
+    --bg3: #FFC8AE;
+}
 .panel {
     /* min height in case content is higher than window height */
     min-height: 100vh;
@@ -55,13 +63,13 @@ body {
 .vertical-header {
     writing-mode: vertical-lr;
     transform: scale(-1);
-    background: linear-gradient(270deg,rgba(255,255,255,0) 60%, rgba(255, 182, 151, 0.7) 40%);
+    background: linear-gradient(270deg, var(--black), var(--faded));
 }
 
 .horizontal-header {
     justify-content: center;
     margin-bottom: 0.8em;
-    background: linear-gradient(180deg,rgba(255,255,255,0) 60%, rgba(255, 182, 151, 0.7) 40%);
+    background: linear-gradient(180deg, var(--black), var(--faded));
 }
 
 .header-wrapper {
@@ -71,16 +79,16 @@ body {
 
   /* colours */
 .color-white {
-    background-color: #fff;
+    background-color: var(--white);
 }
 .color-blue {
-    background-color: #C8E6F9;
+    background-color: var(--bg1);
 }
 .color-darkblue {
-    background-color: #9FCEEB;
+    background-color: var(--bg2);
 }
 .color-red {
-    background-color: #FFC8AE;
+    background-color: var(--bg3);
 }
 
 /* nav bar */
@@ -90,7 +98,7 @@ body {
     left: 50%;
     transform: translate(-50%, 0);
     z-index: 9999;
-    background-color: #fff;
+    background-color: var(--white);
 }
 
 .navigation {
@@ -307,7 +315,7 @@ h3 {
 
 /* experience */
 #experience .card {
-    width: 22vw;
+    width: 20vw;
 }
 #experience .vertical-header {
     background: linear-gradient(270deg,rgba(255,255,255,0) 60%, rgba(98, 167, 210, 0.5) 40%);
